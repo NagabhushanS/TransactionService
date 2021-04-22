@@ -43,3 +43,34 @@
  Returns: { "sum": double } 
  
  A sum of all transactions that are transitively linked by their parent_id to $transaction_id.( If A is parent of B and C,  and C is parent of D and E . sum(A) = B + C + D + E
+
+# Code Structure
+1. The routers are present at **src/routes**
+2. The controllers and models are present at **src/models**
+
+# Algorithm to calculate sum of amounts of Child Transactions**
+Perform a DFS starting from the root transaction_id and add the amounts of all transactions in its subtree. 
+**Time Complexity**: O(n), where n is the number of child transactions.
+
+# Dependencies
+1. Node and Express
+2. TypeScript
+3. MongoDB driver
+4. Babel to compile TypeScript for build version
+5. Other libraries including dotenv, cookie-parser, ts-node, etc
+
+# How to run
+1. Create a MongoDB server at port 27017
+2. To run in development mode, run following commands:
+
+``npm start``
+
+3. To run in build (production) mode,
+
+**In Windows:**
+
+``npm run wclean && npm run prod``
+
+**In Linux:**
+
+``npm run lclean && npm run prod``
