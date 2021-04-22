@@ -48,7 +48,7 @@
 1. The routers are present at **src/routes**
 2. The controllers and models are present at **src/models**
 
-# Algorithm to calculate sum of amounts of Child Transactions**
+# Algorithm to calculate sum of amounts of Child Transactions
 Perform a DFS starting from the root transaction_id and add the amounts of all transactions in its subtree. 
 **Time Complexity**: O(n), where n is the number of child transactions.
 
@@ -61,7 +61,7 @@ Perform a DFS starting from the root transaction_id and add the amounts of all t
 
 # How to run
 1. Create a MongoDB server at port 27017
-2. To run in development mode, run following commands:
+2. To run in development mode, run the following commands:
 
 ``npm start``
 
