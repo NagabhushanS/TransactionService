@@ -2,7 +2,7 @@
  A microservice for transaction APIs
 
 # Supported APIs
- **Create/Update a transaction**
+ **<h2>Create/Update a transaction</h2>**
  
  PUT /transactionservice/transaction/$transaction_id
  
@@ -23,21 +23,21 @@
 
 
 
- **Get a transaction with a particular transaction_id**
+ **<h2>Get a transaction with a particular transaction_id</h2>**
  
  GET /transactionservice/transaction/$transaction_id 
  
  Response { "amount":double,"type":string,"parent_id":long }
 
 
- **Get the transaction_ids of all transactions with a given type**
+ **<h2>Get the transaction_ids of all transactions with a given type</h2>**
  
  GET /transactionservice/types/$type 
  
  Returns: [long, long, ... ] A json list of all transaction ids that share the same type $type.
 
 
- **Get the sum of amounts of all children (both direct and indirect of a transaction)**
+ **<h2>Get the sum of amounts of all children (both direct and indirect of a transaction)</h2>**
  GET /transactionservice/sum/$transaction_id 
  
  Returns: { "sum": double } 
